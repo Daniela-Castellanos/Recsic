@@ -21,7 +21,6 @@ app.layout = html.Div([
     html.Div(id='page-content')  # Aquí se mostrará el contenido de cada página
 ])
 
-# Callback para cambiar el contenido según la ruta
 @app.callback(
     Output('page-content', 'children'),
     Input('url', 'pathname')
